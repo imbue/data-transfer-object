@@ -47,7 +47,7 @@ class BookData extends DataTransferObject
     /**
      * @return AuthorData
      */
-    public function get(): AuthorData
+    public function getAuthor(): AuthorData
     {
         return $this->author;
     }
@@ -66,7 +66,7 @@ $book->setAuthor($author);
 ```
 
 #### Data Collections
-By overriding the `current()` method, you can enable type hinting.
+By overriding the `current()` method and setting the return value, you can enable type hinting.
 
 ```php
 class BooksCollection extends DataTransferObjectCollection
@@ -80,7 +80,7 @@ class BooksCollection extends DataTransferObjectCollection
 
 ```
 foreach ($booksCollection as $bookData) {
-    $bookData-> // type hingting 
+    $bookData-> // type hinting 
 }
 ```
 
