@@ -1,5 +1,10 @@
 # Data Transfer Objects
 
+[![Latest Version][ico-version]][link-version]
+[![Software License][ico-license]](LICENSE.md)
+[![Latest Version on Packagist][ico-packagist]][link-packagist]
+[![Total Downloads][ico-downloads]][link-downloads]
+
 A variation / interpretation of the Data Transfer Object (DTO) design pattern (Distribution Pattern). A DTO is nothing more than an object that can hold some data. Most commonly it is used for transporting that data between system layers.
 
 ## Installation
@@ -191,3 +196,12 @@ composer test
 ## Credits
 - This package is based on the [data-transfer-object package](https://github.com/spatie/data-transfer-object) from [Spatie](https://github.com/spatie).  
 - `Arr` class contains functions copied from [Laravel's](https://github.com/laravel) Arr helper.
+
+[ico-version]: https://img.shields.io/github/release/imbue/data-transfer-object.svg?style=flat-square
+[ico-packagist]: https://img.shields.io/packagist/v/imbue/data-transfer-object.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/imbue/data-transfer-object.svg?style=flat-square
+
+[link-version]: https://github.com/imbue/data-transfer-object/releases
+[link-packagist]: https://packagist.org/packages/imbue/data-transfer-object
+[link-downloads]: https://packagist.org/packages/imbue/data-transfer-object
