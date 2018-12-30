@@ -1,5 +1,7 @@
 # Data Transfer Objects
 
+A variation / interpretation of the Data Transfer Object (DTO) design pattern (Distribution Pattern). A DTO is nothing more than an object that can hold some data. Most commonly it is used for transporting that data between system layers.
+
 ## Installation
 You can install the package via composer
 
@@ -23,7 +25,7 @@ composer require imbue/data-transfer-object
 <a name="introduction"></a>
 ## Introduction
 
-A variation / interpretation of the Data Transfer Object (DTO) design pattern (Distribution Pattern). A DTO is nothing more than an object that can hold some data. Most commonly it is used for transporting that data between system layers.
+Using getter/setter methods gives the advantage of type hinting all data being set. Thus any data object will be transparent and easy to use without the need of additional documentation, for example the API client you're writing. 
 
 <a name="getters-and-setters"></a>
 ## Getters & Setters
