@@ -1,4 +1,4 @@
-# Data Transfer Objects
+# Data Transfer Object
 
 [![Latest Version][ico-version]][link-version]
 [![Software License][ico-license]](LICENSE.md)
