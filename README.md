@@ -66,6 +66,20 @@ $book->setAuthor($author);
 ```
 
 #### Data Collections
+In some cases you may want to have a collection of multiple data objects. By extending the provided `DataTransferObjectColletion` class, you can easily set up a group of DTOs
+
+```
+$collection = new BooksCollection([
+    $bookOne,
+    $bookTwo,
+    $bookThree
+]);
+
+$collection->toArray();
+```
+
+
+##### Auto completion for collections
 By overriding the `current()` method and setting the return value, you can enable type hinting.
 
 ```php
@@ -78,23 +92,38 @@ class BooksCollection extends DataTransferObjectCollection
 }
 ```
 
-```
+```php
 foreach ($booksCollection as $bookData) {
     $bookData-> // type hinting 
 }
 ```
 
 #### Helper functions
+
+##### only()
 ```php
 $bookData
     ->only('title')
     ->toArray();
-    
+```
+
+##### except()
+```php
 $bookData
     ->except('title')
     ->toArray();
 ```
 
+##### toJson() / toArray()
+```php
+$bookData
+    ->toArray();
+    
+$bookData
+    ->toJson();
+```
+
+#### Immutability
 These helpers are immutable, which means they wont affect the original data transfer object.
 
 ### Testing
@@ -103,7 +132,5 @@ composer test
 ```
 
 ## Credits
-- [Liam](https://github.com/imbue)
-- This package is based on the [data-transfer-object package](https://github.com/spatie/data-transfer-object) of [Spatie](https://github.com/spatie).  
+- This package is based on the [data-transfer-object package](https://github.com/spatie/data-transfer-object) from [Spatie](https://github.com/spatie).  
 - `Arr` class contains functions copied from [Laravel's](https://github.com/laravel) Arr helper.
-
