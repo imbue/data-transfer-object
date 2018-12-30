@@ -1,0 +1,40 @@
+{
+    "name": "imbue/data-transfer-object",
+    "description": "",
+    "keywords": [
+        "php",
+        "data transfer object"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Liam Boer",
+            "email": "hello@liamm.nl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Imbue\\DataTransferObject\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Imbue\\DataTransferObject\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
