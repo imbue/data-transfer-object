@@ -104,7 +104,6 @@ composer test
 
 ## Credits
 - [Liam](https://github.com/imbue)
-
-This package is based on the [data-transfer-object package](https://github.com/spatie/data-transfer-object) of [Spatie](https://github.com/spatie)
-The `Arr` class contains functions copied from [Laravel's](https://github.com/laravel) Arr helper.
+- This package is based on the [data-transfer-object package](https://github.com/spatie/data-transfer-object) of [Spatie](https://github.com/spatie).  
+- `Arr` class contains functions copied from [Laravel's](https://github.com/laravel) Arr helper.
 
